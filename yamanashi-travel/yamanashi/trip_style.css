@@ -1,0 +1,179 @@
+/* header */
+.header-box{
+    width: 100%;
+    height: 30px;
+    padding: 0px 10px;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    z-index: 1000;
+    background-color: rgba(255, 255, 255, 0.648);
+    justify-content: space-between;
+}
+.header-day-list{
+    display: flex;
+    color: #000;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.header-day-item{
+    margin: 30px;
+    border-bottom: solid 0.8px #000;
+}
+
+
+/* main */
+
+/* ↓title↓ */
+.cover{
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: auto !important;
+    position: relative;
+    margin: 0;
+}
+
+.smartphone{
+    display: none;
+}
+
+.title_yamanashi_trip{
+    text-align: right;
+    position: absolute;
+    right: 5%;
+    top: 20%;
+    font-size: 10vw;
+    font-family: 'Cormorant Garamond', serif;
+    color: aliceblue;
+    line-height: 110%;
+    filter: drop-shadow(10px 10px 5px #2e5270);
+}
+
+.title_day{
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+    color: aliceblue;
+    font-size: 5vw;
+    font-family: 'Courier New', Courier, monospace;
+}
+/* ↑title↑ */
+
+
+/* ↓main 共通↓ */
+.margin{
+    height: 100px;
+}
+
+.day_title{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Courier New', Courier, monospace;
+    color: #000;
+    text-align: center;
+}
+
+/* plan-box-each */
+.plan-box-each{
+    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Zen Kurenaido', sans-serif;
+    font-family: 'Zen Maru Gothic', sans-serif;
+    font-family: "Noto Sans JP", sans-serif;
+}
+.time-line-place{
+    display: flex;
+    align-items: center;
+    align-items: center;
+}
+.time{
+    width: 0px;
+}
+
+.required_time{
+    font-size: 2vw;
+}
+
+.circle {
+    z-index: 100;
+	border-radius: 50%;
+	background: #77c0ee;
+}
+
+.place {
+    align-items: center; /* 横線を上下中央 */
+    display: flex; /* 文字と横線を横並び */
+    justify-content: center; /* 文字を中央寄せ */
+    font-family: "Noto Sans JP", sans-serif;
+}
+
+.place::before {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    content: "";
+    height: 5px;
+    /* width: 100px; */
+}
+.place::before {
+    background: linear-gradient(to right, #77c0ee, #77c0ee31);
+    margin-right: 15px; /* 文字との余白 */
+}
+
+/* place items */
+.day_section{
+    position:relative;
+}
+
+.img-text-align{
+    display: flex;
+}
+.img-text-align img{
+    border-radius: 30px;}
+
+.link_name:hover{
+    color: blue !important;
+    text-decoration: underline;
+}
+
+/* ↑main 共通↑ */
+
+
+/* fujikyu */
+
+
+/* .fujikyu-item{
+    display: flex;
+    justify-content: center;
+    margin: 170px 30px;
+    font-family: 'Zen Maru Gothic', sans-serif;
+}
+
+.fujikyu-img-tag{
+    object-fit: contain;
+    width: 40vw;
+    height: 50vh;
+    border-radius: 50px;
+    margin-right: 30px;
+} */
+
+.fujikyu-text{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+/* footer */
+.footer{
+    justify-content: center;
+
+}
+.footer-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 20px;
+    padding: 10px;
+    border-top: 1px solid #000;
+    background-color: #77c0ee31;
+}
